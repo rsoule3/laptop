@@ -156,10 +156,10 @@ brew_install_or_upgrade 'zsh'
 
 fancy_echo "Updating Heroku tools ..."
 brew_install_or_upgrade 'heroku-toolbelt'
-brew_install_or_upgrade 'parity'
+# brew_install_or_upgrade 'parity'
 
-fancy_echo "Updating GitHub tools ..."
-brew_install_or_upgrade 'hub'
+# fancy_echo "Updating GitHub tools ..."
+# brew_install_or_upgrade 'hub'
 
 fancy_echo "Updating image tools ..."
 brew_install_or_upgrade 'imagemagick'
@@ -169,15 +169,15 @@ brew_install_or_upgrade 'qt'
 
 fancy_echo "Updating programming languages ..."
 brew_install_or_upgrade 'libyaml' # should come after openssl
-brew_install_or_upgrade 'node'
+# brew_install_or_upgrade 'node'
 brew_install_or_upgrade 'rbenv'
 brew_install_or_upgrade 'ruby-build'
 
-fancy_echo "Updating databases ..."
-brew_install_or_upgrade 'postgres'
-brew_install_or_upgrade 'redis'
-brew_launchctl_restart 'postgresql'
-brew_launchctl_restart 'redis'
+# fancy_echo "Updating databases ..."
+# brew_install_or_upgrade 'postgres'
+# brew_install_or_upgrade 'redis'
+# brew_launchctl_restart 'postgresql'
+# brew_launchctl_restart 'redis'
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
